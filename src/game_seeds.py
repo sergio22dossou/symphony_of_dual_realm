@@ -11,14 +11,14 @@ class game_seeds():
         self.bg = animd_sprite(background, [0, 0], 0.07, 119, 0)
         self.bg.set_size((1900, 1000))
         self.content = level_body("./src/.save.dange")
-        self.sound = py.mixer.Sound('./lvl1/lvl1.ogg')
+        self.sound = py.mixer.Sound('ressources/lvl1/lvl1.ogg')
         self.history = get_file("./src/.history.dange")
         self.leader = get_file(".leader.dange")
 
     def init_text(self):
-        bg = static_sprite("history.png", [0, 0])
+        bg = static_sprite("ressources/menu/history.png", [0, 0])
         bg.set_size((1900, 1000))
-        self.txt = text('med2.ttf', '', (255,255,255), 30)
+        self.txt = text('font/med2.ttf', '', (255,255,255), 30)
         self.buttons = []
         self.param = []
         self.param2 = []
@@ -153,6 +153,6 @@ class game_seeds():
         for elem in word:
             tmp = elem.split(';', 1)
             py.draw.rect(self.screen, color1, ((x, y), size), lenght)
-            txt = text('med2.ttf', tmp[1], color2, 30)
+            txt = text('font/med2.ttf', tmp[1], color2, 30)
             txt.draw(self.screen, [x,y])
             y += offset

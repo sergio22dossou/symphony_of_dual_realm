@@ -128,12 +128,12 @@ class level:
         self.surface = surface
         self.key = key
         self.scale = scale
-        self.level = level_body(level+"/ted.txt")
+        self.level = level_body("ressources/"+level+"/ted.txt")
         self.group = group
         self.key_grp = key_grp
         self.static = static
         self.state = 0
-        self.sound = py.mixer.Sound(f'./{level}/{level}.ogg')
+        self.sound = py.mixer.Sound(f'ressources/{level}/{level}.ogg')
         self.sound.play(-1)
 
     def loading_img(self):
@@ -150,7 +150,7 @@ class level:
         self.png = py.sprite.Group()
         self.enemy = py.sprite.Group()
         self.anex = py.sprite.Group()
-        self.lucas = player("./lvl1/Lucas", [250, 300], 0.09, 2, 0, 3, 50, [])
+        self.lucas = player("ressources/lvl1/Lucas", [250, 300], 0.09, 2, 0, 3, 50, [])
         self.lucas.rect.size = (41, 41)
         # self.bg = static_sprite(self.key[' '], [0, 0])
         # self.bg.image = py.transform.scale(self.bg.image, self.scale[' '])

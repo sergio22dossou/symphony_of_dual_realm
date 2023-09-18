@@ -14,31 +14,31 @@ class final_game_obj(game_seeds):
         self.level = get_the_elem(self.content.map, "level")
         self.status = 'menu'
         self.index = 0
-        self.new_button('./button/start.png', [250, 200], (200, 100), self.buttons)
-        self.new_button('./button/play.png', [250, 350], (200, 100), self.buttons)
-        self.new_button('./button/info.png', [250, 500], (200, 100), self.buttons)
-        self.new_button('./button/quit.png', [250, 650], (200, 100), self.buttons)
-        self.new_button('./button/mini/leader.png', [1700, 0], (50, 50), self.param)
-        self.new_button('./button/mini/param.png', [1770, 0], (50, 50), self.param)
-        self.new_button('./button/mini/tuto.png', [1840, 0], (50, 50), self.param)
-        self.new_button('./button/mini/sound+.png', [100, 0], (100, 100), self.param2)
-        self.new_button('./button/mini/sound-.png', [300, 0], (100, 100), self.param2)
-        self.new_button('./button/mini/save+.png', [100, 200], (100, 100), self.param2)
-        self.new_button('./button/mini/save-.png', [300, 200], (100, 100), self.param2)
-        self.new_button('./button/mini/achv.png', [100, 400], (100, 100), self.param2)
-        self.new_button('./button/mini/buy.png', [300, 400], (100, 100), self.param2)
-        self.new_button('./button/mini/add.png', [100, 600], (100, 100), self.param2)
-        self.new_button('./button/mini/retire.png', [700, 600], (100, 100), self.param2)
-        self.new_button('./button/mini/add.png', [100, 800], (100, 100), self.param2)
-        self.new_button('./button/mini/retire.png', [700, 800], (100, 100), self.param2)
-        self.new_button('./button/mini/back.png', [1600, 0], (50, 50), self.back)
+        self.new_button('ressources/menu/button/start.png', [250, 200], (200, 100), self.buttons)
+        self.new_button('ressources/menu//button/play.png', [250, 350], (200, 100), self.buttons)
+        self.new_button('ressources/menu//button/info.png', [250, 500], (200, 100), self.buttons)
+        self.new_button('ressources/menu//button/quit.png', [250, 650], (200, 100), self.buttons)
+        self.new_button('ressources/menu//button/mini/leader.png', [1700, 0], (50, 50), self.param)
+        self.new_button('ressources/menu//button/mini/param.png', [1770, 0], (50, 50), self.param)
+        self.new_button('ressources/menu//button/mini/tuto.png', [1840, 0], (50, 50), self.param)
+        self.new_button('ressources/menu//button/mini/sound+.png', [100, 0], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/sound-.png', [300, 0], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/save+.png', [100, 200], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/save-.png', [300, 200], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/achv.png', [100, 400], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/buy.png', [300, 400], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/add.png', [100, 600], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/retire.png', [700, 600], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/add.png', [100, 800], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/retire.png', [700, 800], (100, 100), self.param2)
+        self.new_button('ressources/menu//button/mini/back.png', [1600, 0], (50, 50), self.back)
 
     def last_loading(self):
         tmp = self.buttons[self.index]
         tmp.update((250, 120))
         self.data = self.leader.split('\n', self.leader.count('\n'))
         tuto = get_file(".tuto.dange")
-        self.tuto = text('med2.ttf', tuto, (0,0,0), 30)
+        self.tuto = text('font/med2.ttf', tuto, (0,0,0), 30)
         self.x, self.y = [0, 0]
         self.vol = 0.5
         self.fps_vlu = 120
@@ -101,7 +101,7 @@ class final_game_obj(game_seeds):
     def run(self):
         self.init_button()
         self.last_loading()
-        self.bg_info = static_sprite('ko.jpg', [0, 0])
+        self.bg_info = static_sprite('ressources/ko.jpg', [0, 0])
         while self.window:
             self.screen.fill((0,0,0))
             self.state_manager()
