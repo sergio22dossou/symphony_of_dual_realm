@@ -55,10 +55,10 @@ class final_game_obj(game_seeds):
         self.draw_buttons(self.param2)
         self.draw_buttons(self.back)
         py.draw.rect(self.screen, (0,0,0), ((200, 620), (480, 50)), 0)
-        txt = text('med2.ttf', f'Musique: {int(self.vol*100)}%', (255,255,255), 30)
+        txt = text('font/med2.ttf', f'Musique: {int(self.vol*100)}%', (255,255,255), 30)
         txt.draw(self.screen, [200, 620])
         py.draw.rect(self.screen, (0,0,0), ((200, 820), (480, 50)), 0)
-        txt = text('med2.ttf', f'FPS:{self.fps_vlu} per second', (255,255,255), 30)
+        txt = text('font/med2.ttf', f'FPS:{self.fps_vlu} per second', (255,255,255), 30)
         txt.draw(self.screen, [200, 820])
 
     def tuto_state(self):
