@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2023
+## dual_realm
+## File description:
+## dual_realm
+##
+
+import pygame as py
+from my_game_object import final_game_obj
+
+py.init()
+
+screen = py.display.set_mode((1900, 1000))
+py.display.set_caption("Symphony of Dual Realm")
+
+Game = final_game_obj('./king_back', True, screen)
+
+Game.run()
+
+py.quit()
