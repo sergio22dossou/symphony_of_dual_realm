@@ -1,0 +1,50 @@
+{
+    "LVL_body": "ressources/home_1/ted.txt",
+    "LVL": {
+        " ": "ressources/home_1/gr.png",
+        "b": "ressources/home_1/vert_wall.png",
+        "w": "ressources/home_1/wall.png",
+        "n": "ressources/home_1/caro.png",
+        "p": "ressources/home_1/carte.png",
+        "a": "ressources/home_1/horiz.png",
+        "c": "ressources/home_1/plant.png",
+        "f": "ressources/home_1/fire_wood.png",
+        "e": "ressources/home_1/esca_2.png",
+        "C": "ressources/home_1/cuisine.png",
+        "d": "ressources/home_1/drink.png",
+        "x": "ressources/home_1/mousee.png",
+        "r": "ressources/home_1/sac_de_riz.png"
+    },
+    "LVL_scale": {
+        " ": [50,50],
+        "b": [50,50],
+        "w": [50,50],
+        "n": [50,50],
+        "p": [50,50],
+        "a": [50,50],
+        "c": [50,50],
+        "f": [50,50],
+        "e": [50,50],
+        "C": [50,50],
+        "d": [50,50],
+        "x": [50,50],
+        "r": [50,50]
+    },
+    "LVL_group": {
+        " ": "path",
+        "b": "decor",
+        "w": "decor",
+        "n": "path",
+        "p": "decor",
+        "a": "decor",
+        "c": "decor",
+        "f": "decor",
+        "e": "new_map",
+        "C": "decor",
+        "d": "decor",
+        "x": "decor",
+        "r": "decor"
+    },
+    "static": [" ", "b", "w", "n", "p", "a", "c", "f", "e", "C", "d", "x", "r"],
+    "portal": ["./ressources/lvl1/lvl1.json"]
+}

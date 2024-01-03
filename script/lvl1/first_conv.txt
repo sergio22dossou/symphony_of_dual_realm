@@ -1,0 +1,10 @@
+./script/lvl1/joffrey.png
+./script/lvl1/lucas.png
+@
+0Joffrey:Lucas, la festivité approche. Nous devons nous assurer que tout soit prêt pour les dieux.
+Va chercher une lumière éthérer dans la forêt pour la cérémonie./
+1Lucas:Une quoi!!!!?/
+0Joffrey:Tu suis rien de mes cours toi. Une plante sacré, brillante et doré../
+1Lucas:Ah Bien sûr, je crois savoir. Euh...Où puis-je les trouver?/
+0Joffrey:Cherche-les près de la clairière sacrée.
+Sois prudent, la forêt peut révéler des mystères dangereux./

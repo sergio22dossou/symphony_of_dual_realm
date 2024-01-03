@@ -1,0 +1,15 @@
+./script/lvl1/fairy.png
+./script/lvl1/lucas.png
+@
+0Fée:Bonjour brave homme.Vous devez être Lucas, le brave assistant d'Azaka Medeh.
+Il me parle souvent de vous./
+1Lucas:Ah bon?/
+0Fée: Oui, il vous qualifie même de jeune prodige./
+1Lucas: Vous allez me faire rougir. Sinon que chercher vous ici?
+Cet endroit nous est uniquement réservé vous savez./
+0Fée: Oui Azaka Medeh avait besoin d'aide de différentes fée pour une mission dans la forêt.
+Mais j'ai égaré ma baguette quelque part dans le jardin sacré, peut etre à la foret.../
+1Lucas:Ne vous inquietez pas, je vais vous le chercher.
+Vous devez etre vachement fatigué après la mission./
+0Fée:Merci, que les dieux te bénisse cher ami.
+Soyez prudent./
